@@ -1,0 +1,13 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+    using namespace std;
+    void main() {
+         float s,n;
+         cout<<"ingrese el salario : ";
+         cin>>s;
+         n=s-((s*0.13)+(s*0.129));
+         cout<< "el salario es : ";
+         cout<<n<<endl;
+         getch();
+         }
