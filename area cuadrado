@@ -1,0 +1,14 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+ using namespace std;
+  void main (){
+  float lado,area;
+  cout<<"Ingrese el lado del cuadrado: ";
+  cin>>lado;
+  area=pow(lado,2)
+  cout<<"El area es :"<<area;
+  cout<<endl;
+  getch();
+  }
