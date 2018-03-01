@@ -1,0 +1,17 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+using namespace std; // para utilizar teclado y monitor 
+ void main (){
+     //declarar varibles 
+	 int edad ;
+	 cout<<"ingresar edad : ";
+	 cin>>edad;
+	 if (edad >=18)
+		 cout<<"Puede votar";
+	 else 
+		 cout <<"No puede votar ";
+	 getch();
+
+}
+
