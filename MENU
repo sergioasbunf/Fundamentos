@@ -2,6 +2,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
+#include "stdlib.h"
 using namespace std ;
 void main ()
 {
@@ -22,9 +23,14 @@ void main ()
 		  case 3:r=a*b;break;
 		  case 4:r=a/b;break;
 		  case 0:cout<<"salir"<<endl;break;
-		  default: cout<<"Opcion invalida"<<endl;
+		  default: cout<<"Opcion invalida"<<endl;break;
 	  }
+		  if(opcion!=0)
 		  cout<<"el resultado es "<<r<<endl;
+		  else
+			  cout<<endl;
+		  getch();
+		  system("cls");
 	  }while (opcion!=0);
 	  getch();
 }
