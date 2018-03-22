@@ -1,0 +1,43 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "math.h" 
+#include "conio.h"
+using namespace std;
+void main (){
+
+	int op,y=1;
+	float x=0,s=0;
+	do{
+		cout <<"...............MENU................"<<endl,
+		cout<<"1-Calcular el factorial de un numero "<<endl;
+		cout<<"2-CAlcular la serie x/1! + x/2! +......"<<endl;
+		cout <<"...............MENU................"<<endl,
+	    cout<<"elija una opcion "<<endl;
+	    cin>>op;
+	switch(op){
+	case 1:
+		cout<<"ingrese un numero : ";
+		cin>>x;
+		for(int i=1;i<=x;i++){
+		y=y*i;
+		}
+		cout<<"el factorial de "<<x<< "es "<<y<<endl;
+		break;
+	case 2:
+		cout<<"2-CAlcular la serie x/1! + x/2! +......"<<endl;
+		cout<<"ingrese el valor de x :";
+		cin>> x;
+		for(int i=1;i<=x;i++){
+		y=y*i;
+		s=s+(pow(x,i)/y);
+		}
+		cout<<"el resultado de la serie es"<<s<<endl;
+		break;
+	}
+	}while (op != 0);
+		getch();
+
+}
+
+	
