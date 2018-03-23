@@ -1,0 +1,25 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+int main (){
+	int n,aux,aux2=0,i=0,j=0;
+cin>>n;
+while (n>0)
+{
+i++;
+aux=n%10;
+	if(aux>aux2)
+	{
+aux2=aux;
+j=i;
+	}
+	n=n/10;
+	}
+	cout<<"el numero mayor es "<<aux2<<endl;
+	cout<<"la pocicion es  "<<j<<endl;
+	getch();
+	return 0;
+}
